@@ -4,44 +4,41 @@
 *.war
 *.ear
 
-# Package Files
-*.log
-*.bak
-*.swp
-
-# Eclipse and IntelliJ IDEA IDE files
-/.idea/
-/*.iml
-/.project
-/.classpath
-/.settings/
-/target/
-
-# Maven specific files
-/pom.xml.tag
-/pom.xml.releaseBackup
-/pom.xml.versionsBackup
-/log/
-mvnw
-mvnw.cmd
-/.mvn/wrapper/maven-wrapper.jar
-/.mvn/wrapper/maven-wrapper.properties
-*.bat
-
-# Gradle specific files
-.gradle
-/build/
-!gradle/wrapper/gradle-wrapper.jar
-.gradle/
-/out/
-
-# Spring Boot specific files
+# Spring Boot-specific files
 *.springBeans
 .env
 *.env
 *.properties~
 
-# Sensitive or environment-specific properties
+# Package Files
+*.log
+*.bak
+*.swp
+
+# IDE files
+/.idea/
+/*.iml
+/.project
+/.classpath
+/.settings/
+
+# Build files
+/target/
+/build/
+.gradle/
+/out/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Maven-specific files
+mvnw
+mvnw.cmd
+/.mvn/wrapper/maven-wrapper.jar
+/.mvn/wrapper/maven-wrapper.properties
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+
+# Application configuration files
 application.yml
 application-*.yml
 application.properties
@@ -53,24 +50,16 @@ Thumbs.db
 desktop.ini
 *~
 
+# Temporary and generated files
+tmp/
+*.tmp
+/bin/
+/generated/
+
 # Database-related files
 *.sql
 *.sqlite
 *.db
 
-# Ignore MySQL binary logs (if any)
+# MySQL binary logs
 *.bin
-
-# Node modules (if using frontend like React with Spring Boot)
-node_modules/
-npm-debug.log
-yarn-error.log
-yarn-debug.log
-
-# Temp files
-tmp/
-*.tmp
-
-# Generated files
-/bin/
-/generated/
